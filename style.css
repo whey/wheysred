@@ -1,16 +1,19 @@
 body {
   background:#fbfbfb;
   font-family: "Open Sans", "lucida grande", "Segoe UI", arial, verdana, "lucida sans unicode", tahoma, sans-serif;
+  color: #555;
 }
 p.contact {
   font-size: 20px;
 }
 p.new {
   font-size: 22px;
+  padding-bottom: 10px;
 }
+@media screen and (min-height: 600px) {
 p.logo {
-  padding: 20px;
-  margin-top: 5em;
+  margin-top: 10em;
+}
 }
 .footer {
       position:absolute;
@@ -22,3 +25,6 @@ p.logo {
       text-align: right;
       padding: 10px 30px;
   }
+a, a:hover, a:active, a:visited, strong {
+  color: #000;
+}
