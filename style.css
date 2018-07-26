@@ -1,22 +1,133 @@
+        @font-face {
+          font-family: dax-regular;
+          src: url("http://go.pardot.com/l/68082/2017-11-30/bt2m2l/68082/171401/dax_regular_webfont.otf");
+        }
+
 body {
   background:#fbfbfb;
-  font-family: "Open Sans", "lucida grande", "Segoe UI", arial, verdana, "lucida sans unicode", tahoma, sans-serif;
+  /* font-family: "Open Sans", "lucida grande", "Segoe UI", arial, verdana, "lucida sans unicode", tahoma, sans-serif; */
   color: #555;
 }
-p.contact {
-  font-size: 20px;
+.contact {
+text-align: center !important;
+margin: 25px;
+margin-bottom: 64px;
+
+width: inherit;
 }
 p.new {
   font-size: 22px;
   padding-bottom: 10px;
 }
-@media screen and (min-height: 600px) {
-p.logo {
-  margin-top: 10em;
+.logo {
+float: left;
+min-width: 218px;
+margin: 25px;
 }
+.h1{
+  text-align: center;
+  color: #000 !important;
+  font-family: dax-regular !important;
+  font-weight: 600 !important;
+  font-size: 2em !important;
 }
+.h1 >span{
+  color: #898b8e !important;
+}
+.illustration-container{
+  margin: 25px;
+}
+.illustration{
+      max-width: 100%;
+      min-width: 268px;
+
+}
+.illustration-title{
+    max-width: 310px;
+    font-family: dax-regular;
+    font-weight: 200;
+    color: #000;
+        font-size: 1.2em;
+}
+.illustration-title>span {
+  color: #df6026;
+  font-weight: 900;
+}
+.interested{
+      font-size: 1.1em;
+      color: #000;
+      margin: 25px;
+      text-align: justify;
+}
+.email{
+    color: #666666;
+    font-family: dax-regular !important;
+    font-weight: 200;
+    font-size: 1.2em;
+    padding-right: 15px;
+}
+.telephone{
+      color: #666666;
+      font-family: dax-regular !important;
+      font-weight: 200;
+      font-size: 1.2em;
+      padding-right: 15px;
+}
+.website{
+    color: #eea747;
+    font-family: dax-regular !important;
+    font-weight: 200;
+    font-size: 1.2em;
+    padding-right: 15px;
+}
+.aboutus {
+    font-family: 'Open Sans',
+    sans-serif !important;
+    color: #000;
+    text-align: justify;
+    margin: 25px;
+}
+
+
+@media screen and (min-height: 1124px) {
+  .contact {
+      position: fixed;
+      bottom: 30px;
+      margin-bottom: 30px !important;
+      
+
+  }
+  .black-line {
+    position: fixed ;
+    bottom: 35px;
+    margin-bottom: 0px;
+
+
+  }
+
+}
+
+@media screen and (max-width: 993px) {
+
+  .logo {
+    float: left;
+    min-width: 158px;
+    margin: 25px;
+    text-align: center;
+  }
+  .illustration-title {
+    max-width: 100%;
+    font-family: dax-regular;
+    font-weight: 200;
+    color: #000;
+  }
+
+
+}
+
+
 .footer {
-      position:absolute;
+      position: fixed !important;
       bottom: 0px;
       float: right;
       height: 35px;
@@ -24,7 +135,13 @@ p.logo {
       color: #777;
       text-align: right;
       padding: 10px 30px;
-  }
+}
 a, a:hover, a:active, a:visited, strong {
   color: #000;
+}
+
+.black-line{
+background-color: #000;
+height: 6px;
+width: inherit;
 }
