@@ -10,8 +10,8 @@
           }
 
 
-body {
-  background:#fbfbfb;
+html, body {
+  background:#fbfbfb !important;
   font-family: "Open Sans", "lucida grande", "Segoe UI", arial, verdana, "lucida sans unicode", tahoma, sans-serif;
   color: #555;
 }
