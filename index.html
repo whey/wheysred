@@ -6,11 +6,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WHEY R+D - SR&ED Tax Credit Specialists</title>
   <link href="style.css" type="text/css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://bootstrap.townsuite.com/tsbootstrap-jquery/app/css/app.css" id="maincss">
+  <link rel="stylesheet" href="/jquery.sweet-modal.min.css" id="sweet">
   <script src="https://bootstrap.townsuite.com/tsbootstrap-jquery/vendor/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/jquery.sweet-modal.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var variants = {
+        'html-content-dark': {
+          args: [
+            {
+              title: 'A message from our founder',
+              content: '<center><iframe src="https://player.vimeo.com/video/247231695" width="640" height="468" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>',
+              theme: $.sweetModal.THEME_DARK
+            }
+          ]
+        }
+      };
+
+      for (var key in variants) {
+        if (variants.hasOwnProperty(key)) {
+          var variant = variants[key];
+
+          $('#' + key).on('click', { variant: variant }, function(e) {
+            var variant = e.data.variant;
+
+            variant.fn = variant.fn || $.sweetModal;
+            variant.fn.apply(this, variant.args);
+          });
+        }
+      }
+    });
+  </script>
 </head>
 
 <body>
@@ -30,6 +61,8 @@
     <p> When you engage WHEY R+D, you are leveraging the top SR&ED consultants in Atlantic Canada. With our vast experience,
       we will ensure that your submission will be of top quality, both technically & financially. We will provide a risk
       assessment of your activities and costs so as to maximize your potential claims.</p>
+
+      <center><button id="html-content-dark" class="btn-lg btn-green">A message from our founder</button></center>
 </section>
 <section class="illustration-container">
     <div class="row" style="text-align: center;">
